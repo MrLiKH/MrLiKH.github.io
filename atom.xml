@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  
+  <title><![CDATA[MrLiKH's blog]]></title>
+  <subtitle><![CDATA[---群而不党，周而不比---]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://www.weibo.com/3217119443//"/>
+  <updated>2015-07-26T03:22:32.000Z</updated>
+  <id>http://www.weibo.com/3217119443//</id>
+  
+  <author>
+    <name><![CDATA[MrLiKH]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[The First Test]]></title>
+    <link href="http://www.weibo.com/3217119443/2015/07/26/my-new-psot/"/>
+    <id>http://www.weibo.com/3217119443/2015/07/26/my-new-psot/</id>
+    <published>2015-07-26T03:22:32.000Z</published>
+    <updated>2015-07-26T03:22:32.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="Welcome_to_My_Blog!">Welcome to My Blog!</h1><blockquote>
+<p>测试一下</p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="Welcome_to_My_Blog!">Welcome to My Blog!</h1><blockquote>
+<p>测试一下</p>
+</blockquote>
+]]>
+    </summary>
+    
+  </entry>
+  
+</feed>

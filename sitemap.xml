@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.weibo.com/3217119443/about/index-1.html</loc>
+    <lastmod>2015-12-30T14:35:36.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weibo.com/3217119443/categories/index-1.html</loc>
+    <lastmod>2015-12-30T14:25:37.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weibo.com/3217119443/tags/index-1.html</loc>
+    <lastmod>2015-12-30T14:18:57.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weibo.com/3217119443/2015/09/02/post/</loc>
     <lastmod>2015-09-02T14:36:28.000Z</lastmod>
   </url>

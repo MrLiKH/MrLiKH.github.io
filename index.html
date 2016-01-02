@@ -509,7 +509,7 @@
       ds.id = 'duoshuo-script';
       ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
       ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
+      (document.getElementById('footer')
       || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
   </script>
@@ -569,5 +569,16 @@
   
   
 
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.min.js"></script>
+    <script type="text/javascript">
+      jQuery(function() {          
+          jQuery("posts img").lazyload({
+            placeholder:"http://www.mrlikh.com/loading.gif",
+              effect:"fadeIn"
+            });
+          });
+  </script>
+
 </body>
+
 </html>

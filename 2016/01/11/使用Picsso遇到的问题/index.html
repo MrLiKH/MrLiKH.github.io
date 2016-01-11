@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="WR, LOVE" />
+  <meta name="keywords" content="Android，技术," />
 
 
 
@@ -51,15 +51,22 @@
 
 
 
-<meta name="description" content="Do the best yourself!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MrLiKH">
-<meta property="og:url" content="http://www.weibo.com/3217119443/index.html">
+<meta name="description" content="今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。  
+java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classpath.
+123456789java.lang.RuntimeExcepti">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Picsso遇到的问题">
+<meta property="og:url" content="http://www.weibo.com/3217119443/2016/01/11/使用Picsso遇到的问题/index.html">
 <meta property="og:site_name" content="MrLiKH">
-<meta property="og:description" content="Do the best yourself!">
+<meta property="og:description" content="今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。  
+java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classpath.
+123456789java.lang.RuntimeExcepti">
+<meta property="og:updated_time" content="2016-01-11T14:07:51.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MrLiKH">
-<meta name="twitter:description" content="Do the best yourself!">
+<meta name="twitter:title" content="使用Picsso遇到的问题">
+<meta name="twitter:description" content="今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。  
+java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classpath.
+123456789java.lang.RuntimeExcepti">
 
 
 
@@ -71,7 +78,7 @@
   };
 </script>
 
-  <title> WR, LOVE - MrLiKH - Do the best yourself! </title>
+  <title> 使用Picsso遇到的问题 | MrLiKH </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -102,9 +109,7 @@
 
 
 
-  <div class="container one-column 
-   page-home 
-">
+  <div class="container one-column page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -222,24 +227,9 @@
       <div class="main-inner">
         <div id="content" class="content">
           
-  <section id="posts" class="posts-expand">
 
+  <div id="posts" class="posts-expand">
     
-
-    
-    
-      
-      
-        
-        
-        
-      
-
-      
-    
-
-    
-      
 
   
   
@@ -259,10 +249,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/01/11/使用Picsso遇到的问题/" itemprop="url">
-                  使用Picsso遇到的问题
-                </a>
+                使用Picsso遇到的问题
               
             
           </h1>
@@ -317,251 +304,74 @@
       
 
       
-        
-          <span itemprop="articleBody">
-            
-            今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。  
-java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classpath.
-123456789java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classpath.    To use OkHttp with this version of P
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/11/使用Picsso遇到的问题/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+        <span itemprop="articleBody"><p>今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。  </p>
+<p><code>java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classpath.</code></p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">java.lang.RuntimeException: Picasso detected an unsupported OkHttp <span class="function_start"><span class="keyword">on</span></span> <span class="keyword">the</span> classpath.</span><br><span class="line">    To use OkHttp <span class="keyword">with</span> this <span class="property">version</span> <span class="keyword">of</span> Picasso, you'll need:</span><br><span class="line">    <span class="number">1.</span> com.squareup.okhttp:okhttp:<span class="number">1.6</span>.0 (<span class="keyword">or</span> newer)</span><br><span class="line">    <span class="number">2.</span> com.squareup.okhttp:okhttp-urlconnection:<span class="number">1.6</span>.0 (<span class="keyword">or</span> newer)</span><br><span class="line">    Note <span class="keyword">that</span> OkHttp <span class="number">2.0</span>.0+ <span class="keyword">is</span> supported!</span><br><span class="line">            <span class="keyword">at</span> com.squareup.picasso.Utils.createDefaultDownloader(Utils.java:<span class="number">246</span>)</span><br><span class="line">            <span class="keyword">at</span> com.squareup.picasso.Picasso$Builder.build(Picasso.java:<span class="number">596</span>)</span><br><span class="line">            <span class="keyword">at</span> com.squareup.picasso.Picasso.<span class="keyword">with</span>(Picasso.java:<span class="number">473</span>)</span><br><span class="line">            <span class="keyword">at</span></span><br></pre></td></tr></table></figure>
+<p>解决方案：在build.gradle同时添加以下内容即可  </p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">compile</span> <span class="string">'com.squareup.okhttp:okhttp:2.2.0'</span></span><br><span class="line"><span class="keyword">compile</span> <span class="string">'com.squareup.okhttp:okhttp-urlconnection:2.2.0'</span></span><br><span class="line"><span class="keyword">compile</span> <span class="string">'com.squareup.picasso:picasso:2.4.0'</span></span><br></pre></td></tr></table></figure>
+</span>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/01/05/不忘初心/" itemprop="url">
-                  不忘初心
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2016-01-05T20:39:26+08:00" content="2016-01-05">
-              2016-01-05
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
+            <a href="/tags/Android，技术/" rel="tag">#Android，技术</a>
           
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/01/05/不忘初心/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/05/不忘初心/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
       
 
       
-        
-          <h4 id="沿途风景再美，只愿不忘初心，那是起点亦是归宿。">沿途风景再美，只愿不忘初心，那是起点亦是归宿。</h4><p><img src="http://7xo31r.com1.z0.glb.clouddn.com/title.jpg" alt="">  </p>
-<h2 id="不忘初心，方得始终">不忘初心，方得始终</h2><p>（1）<br>上边这句话，<br>早已在5、6年前就见过，<br>手机屏保，<br>只是觉得说得很好，<br>没有理解什么意思。<br>然而，初心是什么？<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/05/不忘初心/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/01/05/不忘初心/" rel="next" title="不忘初心">
+                <i class="fa fa-chevron-left"></i> 不忘初心
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/2016/01/01/用我的2015迎接新的2016/" itemprop="url">
-                  用我的2015迎接新的2016
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2016-01-01T00:12:04+08:00" content="2016-01-01">
-              2016-01-01
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/总结/" itemprop="url" rel="index">
-                    <span itemprop="name">总结</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/01/01/用我的2015迎接新的2016/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/01/用我的2015迎接新的2016/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
       
 
       
-        
-          <p><img src="http://i4.tietuku.com/57a68141198063d8.jpg" alt="">  </p>
-<hr>
-<h2 id="我的2015">我的2015  </h2><p>一直以来，想总结一下毕业以来的时光，那就夹带着2014的感受吧。<br>时间过得很快很快，快到我觉得2014到2016没有什么变化，日子像是一下子被压缩了。好久好久以来，我已经没有去回顾自己走过的路。  </p>
-<h2 id="初来北京，2014-">初来北京，2014.   </h2>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/01/用我的2015迎接新的2016/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
 
-  </section>
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
-  
+      
+    </div>
+  </div>
 
 
         </div>
@@ -570,6 +380,14 @@ java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classp
 
 
         
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/01/11/使用Picsso遇到的问题/"
+           data-title="使用Picsso遇到的问题" data-url="http://www.weibo.com/3217119443/2016/01/11/使用Picsso遇到的问题/">
+      </div>
+    
+  </div>
+
 
       </div>
 
@@ -590,8 +408,17 @@ java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classp
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" src="/images/author.jpg" alt="MrLiKH" itemprop="image"/>
           <p class="site-author-name" itemprop="name">MrLiKH</p>
@@ -662,6 +489,23 @@ java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classp
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
       
 
     </div>
@@ -750,6 +594,167 @@ java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classp
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   <script type="text/javascript" src="/js/bootstrap.js"></script>
 
@@ -782,6 +787,10 @@ java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classp
 
   
   
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"3","bdPos":"left","bdTop":"250"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
 
 <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.min.js"></script>
     <script type="text/javascript">

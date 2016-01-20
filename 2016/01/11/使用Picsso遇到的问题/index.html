@@ -51,22 +51,16 @@
 
 
 
-<meta name="description" content="今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。  
-java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classpath.
-123456789java.lang.RuntimeExcepti">
+<meta name="description" content="今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Picsso遇到的问题">
 <meta property="og:url" content="http://www.weibo.com/3217119443/2016/01/11/使用Picsso遇到的问题/index.html">
 <meta property="og:site_name" content="MrLiKH">
-<meta property="og:description" content="今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。  
-java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classpath.
-123456789java.lang.RuntimeExcepti">
-<meta property="og:updated_time" content="2016-01-11T14:07:51.000Z">
+<meta property="og:description" content="今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。">
+<meta property="og:updated_time" content="2016-01-20T14:20:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Picsso遇到的问题">
-<meta name="twitter:description" content="今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。  
-java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classpath.
-123456789java.lang.RuntimeExcepti">
+<meta name="twitter:description" content="今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。">
 
 
 
@@ -304,7 +298,7 @@ java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classp
       
 
       
-        <span itemprop="articleBody"><p>今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。  </p>
+        <span itemprop="articleBody"><p>今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。<br><a id="more"></a> </p>
 <p><code>java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classpath.</code></p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">java.lang.RuntimeException: Picasso detected an unsupported OkHttp <span class="function_start"><span class="keyword">on</span></span> <span class="keyword">the</span> classpath.</span><br><span class="line">    To use OkHttp <span class="keyword">with</span> this <span class="property">version</span> <span class="keyword">of</span> Picasso, you'll need:</span><br><span class="line">    <span class="number">1.</span> com.squareup.okhttp:okhttp:<span class="number">1.6</span>.0 (<span class="keyword">or</span> newer)</span><br><span class="line">    <span class="number">2.</span> com.squareup.okhttp:okhttp-urlconnection:<span class="number">1.6</span>.0 (<span class="keyword">or</span> newer)</span><br><span class="line">    Note <span class="keyword">that</span> OkHttp <span class="number">2.0</span>.0+ <span class="keyword">is</span> supported!</span><br><span class="line">            <span class="keyword">at</span> com.squareup.picasso.Utils.createDefaultDownloader(Utils.java:<span class="number">246</span>)</span><br><span class="line">            <span class="keyword">at</span> com.squareup.picasso.Picasso$Builder.build(Picasso.java:<span class="number">596</span>)</span><br><span class="line">            <span class="keyword">at</span> com.squareup.picasso.Picasso.<span class="keyword">with</span>(Picasso.java:<span class="number">473</span>)</span><br><span class="line">            <span class="keyword">at</span></span><br></pre></td></tr></table></figure>
 <p>解决方案：在build.gradle同时添加以下内容即可  </p>

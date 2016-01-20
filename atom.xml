@@ -5,7 +5,7 @@
   <subtitle><![CDATA[---群而不党，周而不比---]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.weibo.com/3217119443//"/>
-  <updated>2016-01-17T03:19:52.000Z</updated>
+  <updated>2016-01-20T14:20:18.000Z</updated>
   <id>http://www.weibo.com/3217119443//</id>
   
   <author>
@@ -20,8 +20,8 @@
     <link href="http://www.weibo.com/3217119443/2016/01/14/%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%86%8C/"/>
     <id>http://www.weibo.com/3217119443/2016/01/14/直接打开系统相册/</id>
     <published>2016-01-14T01:54:12.000Z</published>
-    <updated>2016-01-17T03:19:52.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="Open_Gallery_App_in_Android">Open Gallery App in Android</h1><p>最近有一个需求，是直接在应用中跳转系统相册；开始试过很多Intent的方式，可是都不是淡出跳到了系统的图库应用，而是在你当前应用内部打开了相册，供你选择返回数据，或者其他操作。<br>Like that： </p>
+    <updated>2016-01-20T14:20:18.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="Open_Gallery_App_in_Android">Open Gallery App in Android</h1><p>最近有一个需求，是直接在应用中跳转系统相册；开始试过很多Intent的方式，可是都不是淡出跳到了系统的图库应用，而是在你当前应用内部打开了相册，供你选择返回数据，或者其他操作。<br>Like that：<br><a id="more"></a> </p>
 <figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = new Intent<span class="params">(Intent.ACTION_GET_CONTENT, null)</span>;</span><br><span class="line">intent.setType<span class="params">(<span class="string">"image/*"</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"crop"</span>, <span class="string">"true"</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"aspectX"</span>, <span class="number">1</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"aspectY"</span>, <span class="number">1</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"outputX"</span>, <span class="number">100</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"outputY"</span>, <span class="number">100</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"scale"</span>, <span class="literal">true</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"return-data"</span>, <span class="literal">true</span>)</span>;</span><br><span class="line"><span class="comment">//intent.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);</span></span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"outputFormat"</span>, Bitmap.CompressFormat.PNG.toString<span class="params">()</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"noFaceDetection"</span>, <span class="literal">true</span>)</span>;</span><br><span class="line">startActivityForResult<span class="params">(intent, <span class="number">0</span>)</span>;</span><br></pre></td></tr></table></figure>
 <p>这个可以支持缩放裁剪返回数据。<br>百度无果，果断谷歌。<br>以下两种方法支持直接纯粹的打开相册   </p>
 <ul>
@@ -35,7 +35,8 @@
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="Open_Gallery_App_in_Android">Open Gallery App in Android</h1><p>最近有一个需求，是直接在应用中跳转系统相册；开始试过很多Intent的方式，可是都不是淡出跳到了系统的图库应用，而是在你当前应用内部打开]]>
+    <![CDATA[<h1 id="Open_Gallery_App_in_Android">Open Gallery App in Android</h1><p>最近有一个需求，是直接在应用中跳转系统相册；开始试过很多Intent的方式，可是都不是淡出跳到了系统的图库应用，而是在你当前应用内部打开了相册，供你选择返回数据，或者其他操作。<br>Like that：<br>]]>
+    
     </summary>
     
       <category term="Android" scheme="http://www.weibo.com/3217119443/tags/Android/"/>
@@ -51,16 +52,16 @@
     <link href="http://www.weibo.com/3217119443/2016/01/11/%E4%BD%BF%E7%94%A8Picsso%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <id>http://www.weibo.com/3217119443/2016/01/11/使用Picsso遇到的问题/</id>
     <published>2016-01-11T14:05:58.000Z</published>
-    <updated>2016-01-11T14:07:51.000Z</updated>
-    <content type="html"><![CDATA[<p>今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。  </p>
+    <updated>2016-01-20T14:20:32.000Z</updated>
+    <content type="html"><![CDATA[<p>今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。<br><a id="more"></a> </p>
 <p><code>java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classpath.</code></p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">java.lang.RuntimeException: Picasso detected an unsupported OkHttp <span class="function_start"><span class="keyword">on</span></span> <span class="keyword">the</span> classpath.</span><br><span class="line">    To use OkHttp <span class="keyword">with</span> this <span class="property">version</span> <span class="keyword">of</span> Picasso, you'll need:</span><br><span class="line">    <span class="number">1.</span> com.squareup.okhttp:okhttp:<span class="number">1.6</span>.0 (<span class="keyword">or</span> newer)</span><br><span class="line">    <span class="number">2.</span> com.squareup.okhttp:okhttp-urlconnection:<span class="number">1.6</span>.0 (<span class="keyword">or</span> newer)</span><br><span class="line">    Note <span class="keyword">that</span> OkHttp <span class="number">2.0</span>.0+ <span class="keyword">is</span> supported!</span><br><span class="line">            <span class="keyword">at</span> com.squareup.picasso.Utils.createDefaultDownloader(Utils.java:<span class="number">246</span>)</span><br><span class="line">            <span class="keyword">at</span> com.squareup.picasso.Picasso$Builder.build(Picasso.java:<span class="number">596</span>)</span><br><span class="line">            <span class="keyword">at</span> com.squareup.picasso.Picasso.<span class="keyword">with</span>(Picasso.java:<span class="number">473</span>)</span><br><span class="line">            <span class="keyword">at</span></span><br></pre></td></tr></table></figure>
 <p>解决方案：在build.gradle同时添加以下内容即可  </p>
 <figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">compile</span> <span class="string">'com.squareup.okhttp:okhttp:2.2.0'</span></span><br><span class="line"><span class="keyword">compile</span> <span class="string">'com.squareup.okhttp:okhttp-urlconnection:2.2.0'</span></span><br><span class="line"><span class="keyword">compile</span> <span class="string">'com.squareup.picasso:picasso:2.4.0'</span></span><br></pre></td></tr></table></figure>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。  </p>
-<p><code>java.lang.RuntimeException: Picasso detect]]>
+    <![CDATA[<p>今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。<br>]]>
+    
     </summary>
     
       <category term="Android，技术" scheme="http://www.weibo.com/3217119443/tags/Android%EF%BC%8C%E6%8A%80%E6%9C%AF/"/>

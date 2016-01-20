@@ -51,19 +51,16 @@
 
 
 
-<meta name="description" content="Open Gallery App in Android最近有一个需求，是直接在应用中跳转系统相册；开始试过很多Intent的方式，可是都不是淡出跳到了系统的图库应用，而是在你当前应用内部打开了相册，供你选择返回数据，或者其他操作。Like that： 
-12345678910111213Intent intent = new Intent(Intent.ACTION_GET_CONTENT, nu">
+<meta name="description" content="Open Gallery App in Android最近有一个需求，是直接在应用中跳转系统相册；开始试过很多Intent的方式，可是都不是淡出跳到了系统的图库应用，而是在你当前应用内部打开了相册，供你选择返回数据，或者其他操作。Like that：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Intent打开系统相册">
 <meta property="og:url" content="http://www.weibo.com/3217119443/2016/01/14/直接打开系统相册/index.html">
 <meta property="og:site_name" content="MrLiKH">
-<meta property="og:description" content="Open Gallery App in Android最近有一个需求，是直接在应用中跳转系统相册；开始试过很多Intent的方式，可是都不是淡出跳到了系统的图库应用，而是在你当前应用内部打开了相册，供你选择返回数据，或者其他操作。Like that： 
-12345678910111213Intent intent = new Intent(Intent.ACTION_GET_CONTENT, nu">
-<meta property="og:updated_time" content="2016-01-17T03:19:52.000Z">
+<meta property="og:description" content="Open Gallery App in Android最近有一个需求，是直接在应用中跳转系统相册；开始试过很多Intent的方式，可是都不是淡出跳到了系统的图库应用，而是在你当前应用内部打开了相册，供你选择返回数据，或者其他操作。Like that：">
+<meta property="og:updated_time" content="2016-01-20T14:20:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Intent打开系统相册">
-<meta name="twitter:description" content="Open Gallery App in Android最近有一个需求，是直接在应用中跳转系统相册；开始试过很多Intent的方式，可是都不是淡出跳到了系统的图库应用，而是在你当前应用内部打开了相册，供你选择返回数据，或者其他操作。Like that： 
-12345678910111213Intent intent = new Intent(Intent.ACTION_GET_CONTENT, nu">
+<meta name="twitter:description" content="Open Gallery App in Android最近有一个需求，是直接在应用中跳转系统相册；开始试过很多Intent的方式，可是都不是淡出跳到了系统的图库应用，而是在你当前应用内部打开了相册，供你选择返回数据，或者其他操作。Like that：">
 
 
 
@@ -301,7 +298,7 @@
       
 
       
-        <span itemprop="articleBody"><h1 id="Open_Gallery_App_in_Android">Open Gallery App in Android</h1><p>最近有一个需求，是直接在应用中跳转系统相册；开始试过很多Intent的方式，可是都不是淡出跳到了系统的图库应用，而是在你当前应用内部打开了相册，供你选择返回数据，或者其他操作。<br>Like that： </p>
+        <span itemprop="articleBody"><h1 id="Open_Gallery_App_in_Android">Open Gallery App in Android</h1><p>最近有一个需求，是直接在应用中跳转系统相册；开始试过很多Intent的方式，可是都不是淡出跳到了系统的图库应用，而是在你当前应用内部打开了相册，供你选择返回数据，或者其他操作。<br>Like that：<br><a id="more"></a> </p>
 <figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = new Intent<span class="params">(Intent.ACTION_GET_CONTENT, null)</span>;</span><br><span class="line">intent.setType<span class="params">(<span class="string">"image/*"</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"crop"</span>, <span class="string">"true"</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"aspectX"</span>, <span class="number">1</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"aspectY"</span>, <span class="number">1</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"outputX"</span>, <span class="number">100</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"outputY"</span>, <span class="number">100</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"scale"</span>, <span class="literal">true</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"return-data"</span>, <span class="literal">true</span>)</span>;</span><br><span class="line"><span class="comment">//intent.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);</span></span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"outputFormat"</span>, Bitmap.CompressFormat.PNG.toString<span class="params">()</span>)</span>;</span><br><span class="line">intent.putExtra<span class="params">(<span class="string">"noFaceDetection"</span>, <span class="literal">true</span>)</span>;</span><br><span class="line">startActivityForResult<span class="params">(intent, <span class="number">0</span>)</span>;</span><br></pre></td></tr></table></figure>
 <p>这个可以支持缩放裁剪返回数据。<br>百度无果，果断谷歌。<br>以下两种方法支持直接纯粹的打开相册   </p>
 <ul>

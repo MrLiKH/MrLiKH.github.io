@@ -5,7 +5,7 @@
   <subtitle><![CDATA[---群而不党，周而不比---]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.weibo.com/3217119443//"/>
-  <updated>2016-01-20T14:20:18.000Z</updated>
+  <updated>2016-02-01T08:48:03.000Z</updated>
   <id>http://www.weibo.com/3217119443//</id>
   
   <author>
@@ -14,6 +14,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[动画的一个小坑]]></title>
+    <link href="http://www.weibo.com/3217119443/2016/02/01/%E5%8A%A8%E7%94%BB%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E5%9D%91/"/>
+    <id>http://www.weibo.com/3217119443/2016/02/01/动画的一个小坑/</id>
+    <published>2016-02-01T08:44:57.000Z</published>
+    <updated>2016-02-01T08:48:03.000Z</updated>
+    <content type="html"><![CDATA[<p>fillBefore是指动画结束时画面停留在第一帧，<br>fillAfter是指动画结束是画面停留在最后一帧。<br>最关键的问题是，这2个参数<code>不能在xml中设置，这是没有用的</code>。<code>必须在java代码中设置</code>。比如<br>setFillAfter(true);<br>setFillBefore(false);<br>这样动画结束时，停在最后一帧。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>fillBefore是指动画结束时画面停留在第一帧，<br>fillAfter是指动画结束是画面停留在最后一帧。<br>最关键的问题是，这2个参数<code>不能在xml中设置，这是没有用的</code>。<code>必须在java代码中设置</code>。比如<br>se]]>
+    </summary>
+    
+      <category term="Android" scheme="http://www.weibo.com/3217119443/categories/Android/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[使用Intent打开系统相册]]></title>

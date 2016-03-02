@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.weibo.com/3217119443/2016/01/01/%E7%94%A8%E6%88%91%E7%9A%842015%E8%BF%8E%E6%8E%A5%E6%96%B0%E7%9A%842016/</loc>
+    <lastmod>2016-03-02T13:30:57.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weibo.com/3217119443/2016/02/01/%E5%8A%A8%E7%94%BB%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E5%9D%91/</loc>
     <lastmod>2016-02-01T08:48:03.000Z</lastmod>
   </url>
@@ -34,11 +39,6 @@
   <url>
     <loc>http://www.weibo.com/3217119443/tags/index.html</loc>
     <lastmod>2016-01-02T10:36:41.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.weibo.com/3217119443/2016/01/01/%E7%94%A8%E6%88%91%E7%9A%842015%E8%BF%8E%E6%8E%A5%E6%96%B0%E7%9A%842016/</loc>
-    <lastmod>2016-01-02T07:20:39.000Z</lastmod>
   </url>
   
 </urlset>

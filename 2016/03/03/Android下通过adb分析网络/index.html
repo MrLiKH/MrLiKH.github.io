@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="android,移动开发,心情" />
+  <meta name="keywords" content="Android,网络，adb," />
 
 
 
@@ -51,16 +51,22 @@
 
 
 
-<meta name="description" content="fillBefore是指动画结束时画面停留在第一帧，fillAfter是指动画结束是画面停留在最后一帧。最关键的问题是，这2个参数不能在xml中设置，这是没有用的。必须在java代码中设置。比如setFillAfter(true);setFillBefore(false);这样动画结束时，停在最后一帧。">
+<meta name="description" content="1、进入adb目录，直接输入：adb shell netcfg
+ 2、进入adb shell，输入netcfg  
+ 只adb中执行命令时，也许会提示你权限不够，这个时候，别忘记了su ，提升为root 可是如何在手机连上wifi热点的时候选择用数据流量上网？">
 <meta property="og:type" content="article">
-<meta property="og:title" content="动画的一个小坑">
-<meta property="og:url" content="http://www.weibo.com/3217119443/2016/02/01/动画的一个小坑/index.html">
+<meta property="og:title" content="Android下通过adb分析网络">
+<meta property="og:url" content="http://www.weibo.com/3217119443/2016/03/03/Android下通过adb分析网络/index.html">
 <meta property="og:site_name" content="MrLiKH">
-<meta property="og:description" content="fillBefore是指动画结束时画面停留在第一帧，fillAfter是指动画结束是画面停留在最后一帧。最关键的问题是，这2个参数不能在xml中设置，这是没有用的。必须在java代码中设置。比如setFillAfter(true);setFillBefore(false);这样动画结束时，停在最后一帧。">
-<meta property="og:updated_time" content="2016-02-01T08:48:03.000Z">
+<meta property="og:description" content="1、进入adb目录，直接输入：adb shell netcfg
+ 2、进入adb shell，输入netcfg  
+ 只adb中执行命令时，也许会提示你权限不够，这个时候，别忘记了su ，提升为root 可是如何在手机连上wifi热点的时候选择用数据流量上网？">
+<meta property="og:updated_time" content="2016-03-03T13:05:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="动画的一个小坑">
-<meta name="twitter:description" content="fillBefore是指动画结束时画面停留在第一帧，fillAfter是指动画结束是画面停留在最后一帧。最关键的问题是，这2个参数不能在xml中设置，这是没有用的。必须在java代码中设置。比如setFillAfter(true);setFillBefore(false);这样动画结束时，停在最后一帧。">
+<meta name="twitter:title" content="Android下通过adb分析网络">
+<meta name="twitter:description" content="1、进入adb目录，直接输入：adb shell netcfg
+ 2、进入adb shell，输入netcfg  
+ 只adb中执行命令时，也许会提示你权限不够，这个时候，别忘记了su ，提升为root 可是如何在手机连上wifi热点的时候选择用数据流量上网？">
 
 
 
@@ -72,7 +78,7 @@
   };
 </script>
 
-  <title> 动画的一个小坑 | MrLiKH </title>
+  <title> Android下通过adb分析网络 | MrLiKH </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -243,7 +249,7 @@
             
             
               
-                动画的一个小坑
+                Android下通过adb分析网络
               
             
           </h1>
@@ -252,8 +258,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-02-01T16:44:57+08:00" content="2016-02-01">
-              2016-02-01
+            <time itemprop="dateCreated" datetime="2016-03-03T20:48:00+08:00" content="2016-03-03">
+              2016-03-03
             </time>
           </span>
 
@@ -278,8 +284,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/02/01/动画的一个小坑/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/01/动画的一个小坑/" itemprop="commentsCount"></span>
+                <a href="/2016/03/03/Android下通过adb分析网络/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/03/Android下通过adb分析网络/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -298,29 +304,35 @@
       
 
       
-        <span itemprop="articleBody"><p>fillBefore是指动画结束时画面停留在第一帧，<br>fillAfter是指动画结束是画面停留在最后一帧。<br>最关键的问题是，这2个参数<code>不能在xml中设置，这是没有用的</code>。<code>必须在java代码中设置</code>。比如<br>setFillAfter(true);<br>setFillBefore(false);<br>这样动画结束时，停在最后一帧。</p>
+        <span itemprop="articleBody"><p> 1、进入adb目录，直接输入：adb shell netcfg</p>
+<p> 2、进入adb shell，输入netcfg  </p>
+<p> <code>只adb中执行命令时，也许会提示你权限不够，这个时候，别忘记了su ，提升为root</code><br> 可是如何在手机连上wifi热点的时候选择用数据流量上网？</p>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Android/" rel="tag">#Android</a>
+          
+            <a href="/tags/网络，adb/" rel="tag">#网络，adb</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/14/直接打开系统相册/" rel="next" title="使用Intent打开系统相册">
-                <i class="fa fa-chevron-left"></i> 使用Intent打开系统相册
+              <a href="/2016/02/01/动画的一个小坑/" rel="next" title="动画的一个小坑">
+                <i class="fa fa-chevron-left"></i> 动画的一个小坑
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/03/Android下通过adb分析网络/" rel="prev" title="Android下通过adb分析网络">
-                Android下通过adb分析网络 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -370,8 +382,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/02/01/动画的一个小坑/"
-           data-title="动画的一个小坑" data-url="http://www.weibo.com/3217119443/2016/02/01/动画的一个小坑/">
+      <div class="ds-thread" data-thread-key="2016/03/03/Android下通过adb分析网络/"
+           data-title="Android下通过adb分析网络" data-url="http://www.weibo.com/3217119443/2016/03/03/Android下通过adb分析网络/">
       </div>
     
   </div>

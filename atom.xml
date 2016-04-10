@@ -5,7 +5,7 @@
   <subtitle><![CDATA[---群而不党，周而不比---]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.weibo.com/3217119443//"/>
-  <updated>2016-03-03T13:05:49.000Z</updated>
+  <updated>2016-04-10T12:45:38.000Z</updated>
   <id>http://www.weibo.com/3217119443//</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Android Studio 不能预览布局]]></title>
+    <link href="http://www.weibo.com/3217119443/2016/04/10/Android-Studio-%E4%B8%8D%E8%83%BD%E9%A2%84%E8%A7%88%E5%B8%83%E5%B1%80/"/>
+    <id>http://www.weibo.com/3217119443/2016/04/10/Android-Studio-不能预览布局/</id>
+    <published>2016-04-10T12:33:57.000Z</published>
+    <updated>2016-04-10T12:45:38.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="android_studio_不能预览布局_报错_ArrayIndexOutOfBoundsException:_null">android studio 不能预览布局  报错 ArrayIndexOutOfBoundsException: null</h2><p>今天听到Android Studio 2.0 稳定版发布了，就下载替换了原来的版本。<br>导入原有的工程发现布局文件不能在右侧预览了，看到下边log中报错如下：<br><code>ArrayIndexOutOfBoundsException: null</code><br>点一下刷新就会报一次，真是奇怪了，以前好好的啊 ，哪里来的数组越界啊。<br>网上查资料也查不到  我排查了好久终于发现是这个东西的原因：<br><code>android:icon=&quot;@drawable/ic_launcher&quot;</code><br>这个东西真是恶心、把icon 改成logo就好了  可是这样安装程序的icon就没有了。。。<br>但是又改回了icon就奇迹的好了 。。。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="android_studio_不能预览布局_报错_ArrayIndexOutOfBoundsException:_null">android studio 不能预览布局  报错 ArrayIndexOutOfBoundsException: null</h2><p]]>
+    </summary>
+    
+      <category term="Android" scheme="http://www.weibo.com/3217119443/tags/Android/"/>
+    
+      <category term="技术" scheme="http://www.weibo.com/3217119443/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="Android" scheme="http://www.weibo.com/3217119443/categories/Android/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Android下通过adb分析网络]]></title>

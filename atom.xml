@@ -5,7 +5,7 @@
   <subtitle><![CDATA[---群而不党，周而不比---]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.weibo.com/3217119443//"/>
-  <updated>2016-07-10T09:52:38.000Z</updated>
+  <updated>2016-04-10T12:45:38.000Z</updated>
   <id>http://www.weibo.com/3217119443//</id>
   
   <author>
@@ -14,19 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[Service以及如何将 Library 项目打包成jar文件]]></title>
-    <link href="http://www.weibo.com/3217119443/2016/07/10/Service%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E5%B0%86-Library-%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E6%88%90jar%E6%96%87%E4%BB%B6-1/"/>
-    <id>http://www.weibo.com/3217119443/2016/07/10/Service以及如何将-Library-项目打包成jar文件-1/</id>
-    <published>2016-07-10T09:52:38.000Z</published>
-    <updated>2016-07-10T09:52:38.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-  </entry>
   
   <entry>
     <title><![CDATA[Android Studio 不能预览布局]]></title>

@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Android，技术," />
+  <meta name="keywords" content="Android,技术，currentTimeMillis," />
 
 
 
@@ -51,16 +51,16 @@
 
 
 
-<meta name="description" content="今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。">
+<meta name="description" content="Do the best yourself!">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用Picsso遇到的问题">
-<meta property="og:url" content="http://www.weibo.com/3217119443/2016/01/11/使用Picsso遇到的问题/index.html">
+<meta property="og:title" content="由系统时间改变引发的问题">
+<meta property="og:url" content="http://www.weibo.com/3217119443/2016/07/10/由系统时间改变引发的问题/index.html">
 <meta property="og:site_name" content="MrLiKH">
-<meta property="og:description" content="今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。">
-<meta property="og:updated_time" content="2016-01-20T14:20:32.000Z">
+<meta property="og:description" content="Do the best yourself!">
+<meta property="og:updated_time" content="2016-07-10T10:53:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用Picsso遇到的问题">
-<meta name="twitter:description" content="今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。">
+<meta name="twitter:title" content="由系统时间改变引发的问题">
+<meta name="twitter:description" content="Do the best yourself!">
 
 
 
@@ -72,7 +72,7 @@
   };
 </script>
 
-  <title> 使用Picsso遇到的问题 | MrLiKH </title>
+  <title> 由系统时间改变引发的问题 | MrLiKH </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -243,7 +243,7 @@
             
             
               
-                使用Picsso遇到的问题
+                由系统时间改变引发的问题
               
             
           </h1>
@@ -252,8 +252,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-01-11T22:05:58+08:00" content="2016-01-11">
-              2016-01-11
+            <time itemprop="dateCreated" datetime="2016-07-10T18:51:30+08:00" content="2016-07-10">
+              2016-07-10
             </time>
           </span>
 
@@ -262,8 +262,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index">
-                    <span itemprop="name">Android</span>
+                  <a href="/categories/Andorid/" itemprop="url" rel="index">
+                    <span itemprop="name">Andorid</span>
                   </a>
                 </span>
 
@@ -278,8 +278,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/11/使用Picsso遇到的问题/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/11/使用Picsso遇到的问题/" itemprop="commentsCount"></span>
+                <a href="/2016/07/10/由系统时间改变引发的问题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/10/由系统时间改变引发的问题/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -298,12 +298,7 @@
       
 
       
-        <span itemprop="articleBody"><p>今天项目中用到Picasso,以及一个多线程下载的一个库，这个库本身是基于OkHttp开发的，这时候当我去运行项目的时候，老是闪退。看到Log中出现以下信息。<br><a id="more"></a> </p>
-<p><code>java.lang.RuntimeException: Picasso detected an unsupported OkHttp on the classpath.</code></p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">java.lang.RuntimeException: Picasso detected an unsupported OkHttp <span class="function_start"><span class="keyword">on</span></span> <span class="keyword">the</span> classpath.</span><br><span class="line">    To use OkHttp <span class="keyword">with</span> this <span class="property">version</span> <span class="keyword">of</span> Picasso, you'll need:</span><br><span class="line">    <span class="number">1.</span> com.squareup.okhttp:okhttp:<span class="number">1.6</span>.0 (<span class="keyword">or</span> newer)</span><br><span class="line">    <span class="number">2.</span> com.squareup.okhttp:okhttp-urlconnection:<span class="number">1.6</span>.0 (<span class="keyword">or</span> newer)</span><br><span class="line">    Note <span class="keyword">that</span> OkHttp <span class="number">2.0</span>.0+ <span class="keyword">is</span> supported!</span><br><span class="line">            <span class="keyword">at</span> com.squareup.picasso.Utils.createDefaultDownloader(Utils.java:<span class="number">246</span>)</span><br><span class="line">            <span class="keyword">at</span> com.squareup.picasso.Picasso$Builder.build(Picasso.java:<span class="number">596</span>)</span><br><span class="line">            <span class="keyword">at</span> com.squareup.picasso.Picasso.<span class="keyword">with</span>(Picasso.java:<span class="number">473</span>)</span><br><span class="line">            <span class="keyword">at</span></span><br></pre></td></tr></table></figure>
-<p>解决方案：在build.gradle同时添加以下内容即可  </p>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">compile</span> <span class="string">'com.squareup.okhttp:okhttp:2.2.0'</span></span><br><span class="line"><span class="keyword">compile</span> <span class="string">'com.squareup.okhttp:okhttp-urlconnection:2.2.0'</span></span><br><span class="line"><span class="keyword">compile</span> <span class="string">'com.squareup.picasso:picasso:2.4.0'</span></span><br></pre></td></tr></table></figure>
-</span>
+        <span itemprop="articleBody"></span>
       
     </div>
 
@@ -311,7 +306,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Android，技术/" rel="tag">#Android，技术</a>
+            <a href="/tags/Android/" rel="tag">#Android</a>
+          
+            <a href="/tags/技术，currentTimeMillis/" rel="tag">#技术，currentTimeMillis</a>
           
         </div>
       
@@ -320,17 +317,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/05/不忘初心/" rel="next" title="不忘初心">
-                <i class="fa fa-chevron-left"></i> 不忘初心
+              <a href="/2016/07/10/Service以及如何将-Library-项目打包成jar文件/" rel="next" title="Service以及如何将 Library 项目打包成jar文件">
+                <i class="fa fa-chevron-left"></i> Service以及如何将 Library 项目打包成jar文件
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/14/直接打开系统相册/" rel="prev" title="使用Intent打开系统相册">
-                使用Intent打开系统相册 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -380,8 +373,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/11/使用Picsso遇到的问题/"
-           data-title="使用Picsso遇到的问题" data-url="http://www.weibo.com/3217119443/2016/01/11/使用Picsso遇到的问题/">
+      <div class="ds-thread" data-thread-key="2016/07/10/由系统时间改变引发的问题/"
+           data-title="由系统时间改变引发的问题" data-url="http://www.weibo.com/3217119443/2016/07/10/由系统时间改变引发的问题/">
       </div>
     
   </div>

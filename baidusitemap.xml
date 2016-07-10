@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://www.weibo.com/3217119443/2016/07/10/Service%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E5%B0%86-Library-%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E6%88%90jar%E6%96%87%E4%BB%B6/</loc>
-    <lastmod>2016-07-10T10:03:52.000Z</lastmod>
+    <lastmod>2016-07-10T12:22:05.000Z</lastmod>
     <data>
         <display>
         <title>Service以及如何将 Library 项目打包成jar文件</title>
@@ -17,6 +17,28 @@
            
              
               <breadCrumb title="Android" url="http://www.weibo.com/3217119443/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.weibo.com/3217119443/2016/07/10/%E7%94%B1%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4%E6%94%B9%E5%8F%98%E5%BC%95%E5%8F%91%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2016-07-10T10:53:47.000Z</lastmod>
+    <data>
+        <display>
+        <title>由系统时间改变引发的问题</title>
+        <pubTime>2016-07-10T10:51:30.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>技术，currentTimeMillis</tag>
+         
+         
+           
+             
+              <breadCrumb title="Andorid" url="http://www.weibo.com/3217119443/categories/Andorid/"/>
           
         </display>
     </data>
